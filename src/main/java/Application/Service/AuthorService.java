@@ -50,7 +50,7 @@ public class AuthorService {
      */
     public Author addAuthor(Author author) {
         authorDAO.insertAuthor(author);
-        return AuthorDAO.getAuthor(id, name);
+        return authorDAO.getAuthor(author.getId(), author.getName());
     }
 
     public Author getAuthor(int id, String name){
