@@ -49,12 +49,8 @@ public class AuthorService {
      * @return The persisted author if the persistence is successful.
      */
     public Author addAuthor(Author author) {
-        authorDAO.insertAuthor(author);
-        return authorDAO.getAuthor(author.getId(), author.getName());
+        return authorDAO.insertAuthor(author);
+        //return authorDAO.getAuthor(author.getId(), author.getName());
     }
 
-    public String getAuthor(int id, String name){
-        return author.getName();
-
-    }
 }
