@@ -53,7 +53,7 @@ public class AuthorService {
         return authorDAO.getAuthor(author.getId(), author.getName());
     }
 
-    public Author getAuthor(int id, String name){
+    public String getAuthor(int id, String name){
         return author.getName();
 
     }
